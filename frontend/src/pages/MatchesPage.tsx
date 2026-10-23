@@ -167,7 +167,7 @@ export function MatchesPage() {
                   <li key={candidate.found.id}>
                     <CandidateCard
                       candidate={candidate}
-                      canConfirm={lostOpen && candidate.found.status === "open" && !confirmed}
+                      canConfirm={lostOpen && candidate.found.status === "open"}
                       busy={saving}
                       onConfirm={() => setPending(candidate)}
                     />
@@ -234,14 +234,15 @@ function CandidateCard({ candidate, canConfirm, busy, onConfirm }: {
             <strong className="tabular-nums text-slate-900" title={SCORE_LABEL}>{candidate.score.toFixed(2)}</strong>
             <span className="text-xs text-slate-500"> (relative ranking, not a probability)</span>
           </p>
-          {candidate.found.status === "open" ? (
-            <button type="button" className="btn-success px-3 py-1.5" disabled={!canConfirm || busy} onClick={onConfirm}>
+          {/* Only offer the action when it can succeed; disabled only while a save is in flight. */}
+          {canConfirm ? (
+            <button type="button" className="btn-success px-3 py-1.5" disabled={busy} onClick={onConfirm}>
               <CheckCheck className="h-4 w-4" aria-hidden="true" />
               Confirm match
             </button>
-          ) : (
+          ) : candidate.found.status === "matched" ? (
             <span className="text-xs font-medium text-emerald-700">Confirmed as matched</span>
-          )}
+          ) : null}
         </div>
         <dl className="mt-3 grid grid-cols-2 gap-x-4 gap-y-2 sm:grid-cols-4">
           {componentLabels

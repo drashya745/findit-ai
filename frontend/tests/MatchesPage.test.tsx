@@ -66,9 +66,8 @@ describe("Find matches", () => {
     expect(screen.getByText(/R000001 and R000002 are now marked as matched \(saved 2026-10-23\)/)).toBeInTheDocument();
     expect(screen.getByText("Confirmed as matched")).toBeInTheDocument();
     expect(screen.queryByRole("dialog")).not.toBeInTheDocument();
-    for (const button of screen.getAllByRole("button", { name: "Confirm match" })) {
-      expect(button).toBeDisabled(); // The lost report is matched now.
-    }
+    // The lost report is matched now, so no candidate offers an action that would fail.
+    expect(screen.queryByRole("button", { name: "Confirm match" })).not.toBeInTheDocument();
   });
 
   it("cancelling the dialog sends nothing", async () => {
