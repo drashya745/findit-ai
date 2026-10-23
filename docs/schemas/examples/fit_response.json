@@ -1,0 +1,8 @@
+{
+  "schema_version": "1.0",
+  "type": "fit_result",
+  "request_id": "1",
+  "status": "ok",
+  "documents_fitted": 4,
+  "vocabulary_size": 13
+}

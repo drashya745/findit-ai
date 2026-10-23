@@ -1,0 +1,44 @@
+7
+Demo Student
+demo.student@example.edu
+1
+U021
+Water Bottle
+short
+blue
+
+Gym
+2025-12-02
+1
+U021
+Water Bottle
+Blue Milton steel water bottle with a dent and a cat sticker
+blue
+Milton
+Gym
+2025-12-02
+2
+U001
+Water Bottle
+Found a blue steel bottle with a cat sticker, slightly dented
+blue
+
+Sports Complex
+2025-12-03
+Security office, Main Gate
+5
+R030001
+6
+R030001
+R030002
+3
+n
+10
+R030001
+R030002
+y
+10
+R030001
+R030002
+x
+0

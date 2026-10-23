@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "type": "fit",
+  "request_id": "1",
+  "documents": [
+    {
+      "description": "Black leather wallet with student ID card and metro pass"
+    },
+    {
+      "description": "Found a black leather wallet with a student ID card"
+    },
+    {
+      "description": "Brown wallet with no cards"
+    },
+    {
+      "description": "Green folding umbrella"
+    }
+  ]
+}

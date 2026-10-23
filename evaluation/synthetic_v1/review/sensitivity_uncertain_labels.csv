@@ -1,0 +1,9 @@
+strategy,category_blocking,variant,pairs_excluded,dev_threshold,test_tp,test_fp,test_fn,test_precision,test_recall,test_f1
+keyword-baseline-v1,off,original_labels,0,0.5714,10,4,1,0.7143,0.9091,0.8000
+keyword-baseline-v1,off,uncertain_excluded,3,0.5714,10,4,1,0.7143,0.9091,0.8000
+keyword-baseline-v1,on,original_labels,0,0.5714,9,4,2,0.6923,0.8182,0.7500
+keyword-baseline-v1,on,uncertain_excluded,3,0.5714,9,4,2,0.6923,0.8182,0.7500
+python-tfidf-v1,off,original_labels,0,0.6457,10,2,1,0.8333,0.9091,0.8696
+python-tfidf-v1,off,uncertain_excluded,3,0.6020,10,3,1,0.7692,0.9091,0.8333
+python-tfidf-v1,on,original_labels,0,0.6457,9,2,2,0.8182,0.8182,0.8182
+python-tfidf-v1,on,uncertain_excluded,3,0.6020,9,3,2,0.7500,0.8182,0.7826

@@ -1,0 +1,45 @@
+{
+  "schema_version": "1.0",
+  "type": "rank_result",
+  "request_id": "2",
+  "status": "ok",
+  "lost_has_text": true,
+  "matches": [
+    {
+      "candidate_id": "R000002",
+      "rank": 1,
+      "similarity": 0.8057713735,
+      "word_similarity": 0.7983590964,
+      "char_similarity": 0.8168897892,
+      "shared_terms": [
+        "black",
+        "card",
+        "id",
+        "leather",
+        "student",
+        "wallet"
+      ],
+      "explanation": "Exact shared terms: black, card, id, leather, student, wallet; general similarity 0.81 (word TF-IDF 0.80, character n-gram 0.82)"
+    },
+    {
+      "candidate_id": "R000003",
+      "rank": 2,
+      "similarity": 0.1506723088,
+      "word_similarity": 0.1118071371,
+      "char_similarity": 0.2089700664,
+      "shared_terms": [
+        "wallet"
+      ],
+      "explanation": "Exact shared terms: wallet; general similarity 0.15 (word TF-IDF 0.11, character n-gram 0.21)"
+    },
+    {
+      "candidate_id": "R000004",
+      "rank": 3,
+      "similarity": 0.0,
+      "word_similarity": 0.0,
+      "char_similarity": 0.0,
+      "shared_terms": [],
+      "explanation": "No text similarity"
+    }
+  ]
+}

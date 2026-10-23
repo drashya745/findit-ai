@@ -1,0 +1,33 @@
+# Build output
+build/
+build-release/
+compile_commands.json
+node_modules/
+dist/
+
+# Python environment and caches
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Source dataset: licence UNVERIFIED (docs/DATASET.md), so it is not committed by default.
+# Both copies are 3.3 MB and identical. See data/raw/README.md to obtain/restore it.
+# After verifying the licence allows redistribution: git add -f data/raw/<file>.csv
+/lost_found_dataset_realistic_metadata_30k.csv
+data/raw/*.csv
+
+# Generated data: regenerate with ./build/findit_ingest
+data/processed/
+# Runtime data created by the CLI (user-created reports/users, confirmed matches, Python log)
+data/store/
+
+# Editors / OS
+.DS_Store
+.vscode/
+*.tmp
+
+# Kept on purpose: evaluation/results/ (reported results), evaluation/synthetic_v1/ (synthetic,
+# self-authored), third_party/nlohmann/json.hpp (vendored, MIT),
+# tests/fixtures/realistic_sample.csv (12 rows copied from the dataset: keep the repository
+# private until the dataset licence is verified).

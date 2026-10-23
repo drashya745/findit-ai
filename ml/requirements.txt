@@ -1,0 +1,7 @@
+# FindIt AI Python matcher. Exact versions installed and tested on macOS (Apple Silicon),
+# Python 3.14.3. Install with: .venv/bin/pip install -r ml/requirements.txt
+numpy==2.5.4
+scipy==1.18.1
+pandas==3.1.0
+scikit-learn==1.9.1
+pytest==9.1.1

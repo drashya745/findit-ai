@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0",
+  "type": "ready",
+  "status": "ok",
+  "service": "findit_ml.service",
+  "text_fields": [
+    "description"
+  ],
+  "versions": {
+    "python": "3.14.3",
+    "scikit_learn": "1.9.1"
+  }
+}

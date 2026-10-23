@@ -1,0 +1,11 @@
+date_utc: 2026-10-22T18:39:49Z
+machine_model: MacBookAir10,1
+cpu: Apple M1
+logical_cpus: 8
+memory_gb: 8
+macos: 27.0.1
+compiler: Apple clang version 21.0.0 (clang-2100.3.34.2)
+build_type: Release
+python: Python 3.14.3
+scikit_learn: 1.9.1
+note: single run, other applications not controlled; timings are wall-clock (std::chrono::steady_clock)

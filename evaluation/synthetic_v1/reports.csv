@@ -1,0 +1,56 @@
+report_id,report_type,status,category,description,color,brand,location,reporter_id,date,held_at,source_ref
+R900001,LOST,OPEN,Wallet,Black leather wallet with my student ID and a metro card,black,,Library,U001,2026-03-02,,SYNTHETIC:G01
+R900002,LOST,OPEN,Wallet,"Lost my purse, black, has a zip coin pocket",black,,Canteen,U002,2026-03-02,,SYNTHETIC:G02
+R900003,LOST,OPEN,Water Bottle,Blue water botle with dent and cat stiker,blue,Milton,Gym,U003,2026-03-03,,SYNTHETIC:G03
+R900004,LOST,OPEN,Calculator,Silver Casio scientific calculator with name label RK,silver,Casio,Classroom A102,U004,2026-03-03,,SYNTHETIC:G04
+R900005,LOST,OPEN,Bag,Black laptop bag with a broken zip and a keyring,black,,Parking Area,U001,2026-03-04,,SYNTHETIC:G05
+R900006,LOST,OPEN,Umbrella,Red umbrella with wooden hook handle,red,,Library,U002,2026-03-04,,SYNTHETIC:G06
+R900007,LOST,OPEN,Earphones,Lost my earphones,white,,Hostel Block A,U003,2026-03-05,,SYNTHETIC:G07
+R900008,LOST,OPEN,ID Card,"pls help, lost it near the gym",blue,,Gym,U004,2026-03-05,,SYNTHETIC:G08
+R900009,LOST,OPEN,Cap,Navy blue Adidas cap with white stripes,blue,Adidas,Sports Ground,U001,2026-03-06,,SYNTHETIC:G09
+R900010,LOST,OPEN,Power Bank,Mi power bank 10000mAh with scratches on the side,black,MI,Study Hall,U002,2026-03-06,,SYNTHETIC:G10
+R900011,LOST,OPEN,Glasses,Black spectacles in a brown case,black,Lenskart,Seminar Hall,U003,2026-03-07,,SYNTHETIC:G11
+R900012,LOST,OPEN,Keychain,Keychain with a small football and three keys,silver,,Hostel Block B,U004,2026-03-07,,SYNTHETIC:G12
+R900013,LOST,OPEN,Notebook,"Red notebook with physics notes, name Priya on cover",red,,Academic Block,U001,2026-03-08,,SYNTHETIC:G13
+R900014,LOST,OPEN,Pen Drive,SanDisk 32GB pen drive on a lanyard,black,,Library,U002,2026-03-08,,SYNTHETIC:G14
+R900015,LOST,OPEN,Charger,Dell laptop charger with frayed cable,black,Dell,Seminar Hall,U003,2026-03-09,,SYNTHETIC:G15
+R900016,LOST,OPEN,Tumbler,Pink steel tumbler with a bamboo lid,pink,,Canteen,U004,2026-03-09,,SYNTHETIC:G16
+R900017,LOST,OPEN,Textbook,Data structures textbook with highlighted pages,green,Pearson,Library,U001,2026-03-10,,SYNTHETIC:G17
+R900018,LOST,OPEN,Watch,Watch with black strap and cracked glass,black,Fastrack,Gym,U002,2026-03-10,,SYNTHETIC:G18
+R900019,LOST,OPEN,Water Bottle,Green Milton water bottle with a dent near the cap,green,Milton,Gym,U003,2026-03-11,,SYNTHETIC:N01
+R900020,LOST,OPEN,Hoodie,Grey hoodie with university logo on the back,grey,,Auditorium,U004,2026-03-11,,SYNTHETIC:N02
+R900021,LOST,OPEN,Mobile Case,Black Samsung phone case with a card slot,black,Samsung,Library,U001,2026-03-12,,SYNTHETIC:N03
+R900022,LOST,OPEN,Umbrella,Large yellow golf umbrella,yellow,,Bus Stop,U002,2026-03-12,,SYNTHETIC:N04
+R900023,LOST,OPEN,Pencil Box,Blue pencil box with stickers of planets,blue,,Classroom A102,U003,2026-03-13,,SYNTHETIC:N05
+R950001,FOUND,OPEN,Wallet,Found black leather wallet containing a student ID card,black,,Library,U004,2026-03-03,,SYNTHETIC:G01
+R950002,FOUND,OPEN,Wallet,"Brown leather wallet, completely empty",brown,,Library,U001,2026-03-03,,SYNTHETIC:G01
+R950003,FOUND,OPEN,Wallet,Small black wallet with zip coin pocket,black,,Canteen,U003,2026-03-03,,SYNTHETIC:G02
+R950004,FOUND,OPEN,Water Bottle,"Blue steel water bottle, dented, cat sticker on it",blue,,Sports Complex,U004,2026-03-04,,SYNTHETIC:G03
+R950005,FOUND,OPEN,Water Bottle,"Blue water bottle, brand new, no stickers",blue,,Gym,U001,2026-03-04,,SYNTHETIC:G03
+R950006,FOUND,OPEN,Calculator,"Grey Casio calculator, label says RK",grey,Casio,Classroom A102,U002,2026-03-04,,SYNTHETIC:G04
+R950007,FOUND,OPEN,Laptop Bag,"Black laptop bag, zip broken, keyring attached",black,,Parking Area,U003,2026-03-05,,SYNTHETIC:G05
+R950008,FOUND,OPEN,Umbrella,"Red umbrella, wooden handle shaped like a hook",red,,Main Gate,U004,2026-03-05,,SYNTHETIC:G06
+R950009,FOUND,OPEN,Umbrella,Red umbrella with a plastic handle,red,,Library,U001,2026-03-05,,SYNTHETIC:G06
+R950010,FOUND,OPEN,Earphones,White wired earphones found in the hostel common room,white,,Hostel Block A,U002,2026-03-06,,SYNTHETIC:G07
+R950011,FOUND,OPEN,Earphones,White earphones with blue ear tips,white,,Hostel Block B,U003,2026-03-06,,SYNTHETIC:G07
+R950012,FOUND,OPEN,ID Card,Student ID card on a blue lanyard,blue,,Gym,U001,2026-03-06,,SYNTHETIC:G08
+R950013,FOUND,OPEN,Cap,"Blue cap with three white stripes, Adidas logo",blue,,Cricket Ground,U002,2026-03-07,,SYNTHETIC:G09
+R950014,FOUND,OPEN,Power Bank,"Black Mi power bank, scratched side, 10000 mAh",black,,Study Hall,U003,2026-03-07,,SYNTHETIC:G10
+R950015,FOUND,OPEN,Glasses,"Glasses in a brown case, Lenskart written inside",black,,Seminar Hall,U004,2026-03-08,,SYNTHETIC:G11
+R950016,FOUND,OPEN,Keychain,Bunch of three keys on a football keychain,silver,,Hostel Block B,U001,2026-03-08,,SYNTHETIC:G12
+R950017,FOUND,OPEN,Keychain,Single key on a plain ring,silver,,Hostel Block B,U002,2026-03-08,,SYNTHETIC:G12
+R950018,FOUND,OPEN,Notebook,"Red physics notebook, cover says Priya",red,,Academic Block,U003,2026-03-09,,SYNTHETIC:G13
+R950019,FOUND,OPEN,Notebook,Red notebook full of chemistry notes,red,,Academic Block,U004,2026-03-09,,SYNTHETIC:G13
+R950020,FOUND,OPEN,Pen Drive,"Black USB flash drive, 32GB, with lanyard",black,,Library,U001,2026-03-09,,SYNTHETIC:G14
+R950021,FOUND,OPEN,Charger,"Laptop charger, Dell, cable frayed near the plug",black,,Auditorium,U002,2026-03-10,,SYNTHETIC:G15
+R950022,FOUND,OPEN,Flask,Pink tumbler with bamboo lid,pink,,Canteen,U003,2026-03-10,,SYNTHETIC:G16
+R950023,FOUND,OPEN,Textbook,Data structures book by Pearson with highlighting,green,,Library,U004,2026-03-11,,SYNTHETIC:G17
+R950024,FOUND,OPEN,Watch,"Black strap watch, glass cracked, Fastrack",black,,Gym,U001,2026-03-11,,SYNTHETIC:G18
+R950025,FOUND,OPEN,Watch,"Black Casio digital watch, no damage",black,Casio,Gym,U002,2026-03-11,,SYNTHETIC:G18
+R950026,FOUND,OPEN,Water Bottle,"Green plastic bottle, brand new, Cello",green,Cello,Gym,U003,2026-03-12,,SYNTHETIC:N01
+R950027,FOUND,OPEN,Mobile Case,"Black phone case for an iPhone, clear back",black,,Library,U004,2026-03-12,,SYNTHETIC:N03
+R950028,FOUND,OPEN,Umbrella,Small yellow folding umbrella with flowers,yellow,,Bus Stop,U001,2026-03-13,,SYNTHETIC:N04
+R950029,FOUND,OPEN,Pencil Box,"Blue metal pencil box, no stickers",blue,,Classroom A102,U002,2026-03-13,,SYNTHETIC:N05
+R950030,FOUND,OPEN,Ruler,"Silver ruler, 30 cm",silver,,Classroom A102,U003,2026-03-13,,SYNTHETIC:NOISE
+R950031,FOUND,OPEN,Clipboard,White clipboard with exam sheets,white,,Admin Block,U004,2026-03-14,,SYNTHETIC:NOISE
+R950032,FOUND,OPEN,Sketchbook,Purple sketchbook with charcoal drawings,purple,,Garden,U001,2026-03-14,,SYNTHETIC:NOISE

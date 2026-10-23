@@ -1,0 +1,19 @@
+lost_id,found_id,judgement,confidence,proposed_label
+R900003,R950004,"Keep positive. Dent and cat sticker both stated; Gym and Sports Complex are the same SPORTS zone; lost text only has typos (botle, stiker).",high,
+R900004,R950006,"Keep positive. Casio + label RK in both; silver vs grey is a plausible colour description difference, not a contradiction.",high,
+R900005,R950007,"Keep positive. Lost text itself says laptop bag; broken zip and keyring in both. Category difference is the point of the case.",high,
+R900006,R950008,"Keep positive, but only the wooden hook handle links them; Library vs Main Gate is unconstrained. A human might rate this uncertain.",medium,
+R900009,R950013,"Keep positive. Adidas + white stripes in both; navy blue vs blue and Sports Ground vs Cricket Ground (same zone) are compatible.",high,
+R900015,R950021,"Keep positive. Dell + frayed cable in both; Seminar Hall and Auditorium are the same ACADEMIC zone.",high,
+R900016,R950022,"Keep positive. Pink + bamboo lid; the found text even says tumbler. Filed under Flask on purpose.",high,
+R900001,R950003,"Closed-world negative is NOT supported by text: a black wallet with a zip coin pocket (Canteen) does not contradict a black leather wallet with a student ID (Library). Only the location differs. Add an explicit, justified label or treat as uncertain.",medium,uncertain
+R900002,R950001,"Closed-world negative is NOT supported by text: a black leather wallet with a student ID (Library) does not contradict a black purse with a zip coin pocket (Canteen). G01 and G02 are mutually consistent across cases.",medium,uncertain
+R900007,R950010,"Keep positive by construction, but the lost text is only 'Lost my earphones'; only the hostel block links them.",medium,
+R900007,R950011,"Negative is a definition, not evidence: the lost report never mentions ear tips, and Block A vs Block B is weak. A human could not tell R950010 and R950011 apart from the text.",low,uncertain
+R900008,R950012,"Keep positive by construction (only blue ID card in the set), but the evidence is category + colour + location only; queries.csv calls this no_text although 'gym' is an informative word.",medium,
+R900003,R950012,"Clear negative: water bottle vs ID card. Flagged only because the lowest positive score (R900008, 0.40) is low.",high,
+R900004,R950030,"Clear negative: calculator vs ruler.",high,
+R900011,R950027,"Clear negative: glasses vs phone case.",high,
+R900019,R950005,"Clear negative: green Milton bottle with a dent vs blue brand-new bottle (colour and condition contradict).",high,
+R900021,R950001,"Clear negative: phone case vs wallet, although 'card slot' and 'ID card' share a word.",high,
+R900021,R950020,"Clear negative: phone case vs USB drive.",high,

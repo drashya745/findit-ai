@@ -1,0 +1,38 @@
+lost_id,found_id,original_label,reviewed_label,automatic_flags,assistant_judgement,assistant_confidence,review_status,human_verified
+R900001,R950001,1,1,,,,no_issue_found,no
+R900001,R950002,0,0,,,,no_issue_found,no
+R900002,R950003,1,1,,,,no_issue_found,no
+R900003,R950004,1,1,A09,"Keep positive. Dent and cat sticker both stated; Gym and Sports Complex are the same SPORTS zone; lost text only has typos (botle, stiker).",high,needs_human_review,no
+R900003,R950005,0,0,,,,no_issue_found,no
+R900004,R950006,1,1,A09,"Keep positive. Casio + label RK in both; silver vs grey is a plausible colour description difference, not a contradiction.",high,needs_human_review,no
+R900005,R950007,1,1,A09,Keep positive. Lost text itself says laptop bag; broken zip and keyring in both. Category difference is the point of the case.,high,needs_human_review,no
+R900006,R950008,1,1,A09,"Keep positive, but only the wooden hook handle links them; Library vs Main Gate is unconstrained. A human might rate this uncertain.",medium,needs_human_review,no
+R900006,R950009,0,0,,,,no_issue_found,no
+R900007,R950010,1,1,A12(lost),"Keep positive by construction, but the lost text is only 'Lost my earphones'; only the hostel block links them.",medium,needs_human_review,no
+R900007,R950011,0,uncertain,A12(lost),"Negative is a definition, not evidence: the lost report never mentions ear tips, and Block A vs Block B is weak. A human could not tell R950010 and R950011 apart from the text.",low,needs_human_review,no
+R900008,R950012,1,1,A12(lost),"Keep positive by construction (only blue ID card in the set), but the evidence is category + colour + location only; queries.csv calls this no_text although 'gym' is an informative word.",medium,needs_human_review,no
+R900009,R950013,1,1,A09,Keep positive. Adidas + white stripes in both; navy blue vs blue and Sports Ground vs Cricket Ground (same zone) are compatible.,high,needs_human_review,no
+R900010,R950014,1,1,,,,no_issue_found,no
+R900011,R950015,1,1,,,,no_issue_found,no
+R900012,R950016,1,1,,,,no_issue_found,no
+R900012,R950017,0,0,,,,no_issue_found,no
+R900013,R950018,1,1,,,,no_issue_found,no
+R900013,R950019,0,0,,,,no_issue_found,no
+R900014,R950020,1,1,,,,no_issue_found,no
+R900015,R950021,1,1,A09,Keep positive. Dell + frayed cable in both; Seminar Hall and Auditorium are the same ACADEMIC zone.,high,needs_human_review,no
+R900016,R950022,1,1,A09,Keep positive. Pink + bamboo lid; the found text even says tumbler. Filed under Flask on purpose.,high,needs_human_review,no
+R900017,R950023,1,1,,,,no_issue_found,no
+R900018,R950024,1,1,,,,no_issue_found,no
+R900018,R950025,0,0,,,,no_issue_found,no
+R900019,R950026,0,0,,,,no_issue_found,no
+R900021,R950027,0,0,,,,no_issue_found,no
+R900022,R950028,0,0,,,,no_issue_found,no
+R900023,R950029,0,0,,,,no_issue_found,no
+R900001,R950003,unlabelled (closed-world 0),uncertain,A10,"Closed-world negative is NOT supported by text: a black wallet with a zip coin pocket (Canteen) does not contradict a black leather wallet with a student ID (Library). Only the location differs. Add an explicit, justified label or treat as uncertain.",medium,needs_human_review,no
+R900002,R950001,unlabelled (closed-world 0),uncertain,A10,Closed-world negative is NOT supported by text: a black leather wallet with a student ID (Library) does not contradict a black purse with a zip coin pocket (Canteen). G01 and G02 are mutually consistent across cases.,medium,needs_human_review,no
+R900003,R950012,unlabelled (closed-world 0),unlabelled (closed-world 0),A11,"Clear negative: water bottle vs ID card. Flagged only because the lowest positive score (R900008, 0.40) is low.",high,needs_human_review,no
+R900004,R950030,unlabelled (closed-world 0),unlabelled (closed-world 0),A11,Clear negative: calculator vs ruler.,high,needs_human_review,no
+R900011,R950027,unlabelled (closed-world 0),unlabelled (closed-world 0),A11,Clear negative: glasses vs phone case.,high,needs_human_review,no
+R900019,R950005,unlabelled (closed-world 0),unlabelled (closed-world 0),A11,Clear negative: green Milton bottle with a dent vs blue brand-new bottle (colour and condition contradict).,high,needs_human_review,no
+R900021,R950001,unlabelled (closed-world 0),unlabelled (closed-world 0),A11,"Clear negative: phone case vs wallet, although 'card slot' and 'ID card' share a word.",high,needs_human_review,no
+R900021,R950020,unlabelled (closed-world 0),unlabelled (closed-world 0),A11,Clear negative: phone case vs USB drive.,high,needs_human_review,no

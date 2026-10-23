@@ -1,0 +1,40 @@
+{
+  "name": "findit-frontend",
+  "private": true,
+  "version": "0.1.0",
+  "description": "FindIt AI web UI (React + TypeScript + Vite + Tailwind) for the local findit_server API",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "lucide-react": "0.577.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-router-dom": "7.18.4"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "10.4.2",
+    "@testing-library/jest-dom": "6.9.1",
+    "@testing-library/react": "16.3.3",
+    "@testing-library/user-event": "14.6.7",
+    "@types/react": "18.3.31",
+    "@types/react-dom": "18.3.7",
+    "@vitejs/plugin-react": "5.2.0",
+    "autoprefixer": "10.6.1",
+    "jsdom": "29.1.1",
+    "postcss": "8.5.29",
+    "tailwindcss": "3.4.19",
+    "typescript": "5.9.3",
+    "vite": "6.4.4",
+    "vitest": "4.1.11"
+  },
+  "engines": {
+    "node": "^20.19.0 || ^22.13.0 || >=24.0.0"
+  }
+}

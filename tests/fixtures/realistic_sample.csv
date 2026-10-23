@@ -1,0 +1,13 @@
+item_id,lost_or_found,item_name,description,color,brand,location,user,timestamp
+1,lost,Keychain,"Can't find my keychain (yellow), has a sticker.",yellow,Milton,Garden,Suma,2025-09-23 17:34:15
+2,found,Keychain,"Picked up yellow keychain, belongs to someone.",yellow,Milton,Garden,Yash,2025-10-16 17:34:15
+3,lost,Marker,"Missing marker (yellow), last seen near campus.",yellow,HP,Gym,Ananya,2025-11-06 17:34:15
+4,found,Marker,Found a yellow marker with minor marks.,yellow,HP,Gym,Arjun,2025-10-07 17:34:15
+5,lost,Notebook,L0st notebook (brown) bro pls help find.,brown,Samsung,Study Hall,Manoj,2025-11-24 17:34:15
+6,found,Notebook,Notebook (brown) discovered near walkway.,brown,Samsung,Study Hall,Pooja,2025-10-10 17:34:15
+7,lost,Bag,"I lost my grey bag, has scratches near the edge.",grey,Casio,Parking Area,Siri,2025-11-15 17:34:15
+8,found,Bag,Found sum bag (grey) lol not sure whose.,grey,Casio,Parking Area,Manoj,2025-09-03 17:34:15
+9,lost,Power Bank,"Can't find my power bank (silver), has a sticker.",silver,Samsung,Corridor,Ananya,2025-08-19 17:34:15
+10,found,Power Bank,Found sum power bank (silver) lol not sure whose.,silver,Samsung,Corridor,Ananya,2025-11-13 17:34:15
+11,lost,Laptop Bag,"Can't find my laptop bag (silver), has a sticker.",silver,Milton,Main Gate,Sneha,2025-08-16 17:34:15
+12,found,Laptop Bag,Laptop Bag (silver) discovered near walkway.,silver,Milton,Main Gate,Harsha,2025-10-27 17:34:15

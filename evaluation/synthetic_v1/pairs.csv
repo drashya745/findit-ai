@@ -1,0 +1,30 @@
+lost_id,found_id,label,group_id,rationale
+R900001,R950001,1,G01,Same black leather wallet with student ID at the Library
+R900001,R950002,0,G01,"Different colour (brown) and empty, so not the same wallet"
+R900002,R950003,1,G02,Black wallet/purse with zip coin pocket at the Canteen
+R900003,R950004,1,G03,"Dented blue bottle with cat sticker; found in the same sports zone"
+R900003,R950005,0,G03,"Brand new with no stickers, contradicts dent and cat sticker"
+R900004,R950006,1,G04,Casio calculator with label RK; silver and grey both describe it
+R900005,R950007,1,G05,Black laptop bag with broken zip and keyring
+R900006,R950008,1,G06,Red umbrella with hook-shaped wooden handle
+R900006,R950009,0,G06,"Plastic handle, contradicts wooden hook handle"
+R900007,R950010,1,G07,White earphones in the same hostel block (defined as the true item when building the set)
+R900007,R950011,0,G07,Different hostel block and blue tips (defined as a different item)
+R900008,R950012,1,G08,Blue ID card lanyard at the Gym
+R900009,R950013,1,G09,Blue Adidas cap with white stripes
+R900010,R950014,1,G10,"Black Mi 10000 mAh power bank, scratched side"
+R900011,R950015,1,G11,Lenskart glasses in a brown case
+R900012,R950016,1,G12,Three keys on a football keychain
+R900012,R950017,0,G12,"Single key on a plain ring, contradicts three keys and football"
+R900013,R950018,1,G13,Red physics notebook with Priya on the cover
+R900013,R950019,0,G13,"Chemistry notes, contradicts physics notes"
+R900014,R950020,1,G14,32GB black flash drive with lanyard
+R900015,R950021,1,G15,Dell laptop charger with frayed cable
+R900016,R950022,1,G16,Pink tumbler with bamboo lid (filed under Flask)
+R900017,R950023,1,G17,Pearson data structures book with highlighting
+R900018,R950024,1,G18,Fastrack watch with black strap and cracked glass
+R900018,R950025,0,G18,"Casio, undamaged, contradicts Fastrack and cracked glass"
+R900019,R950026,0,N01,"Cello, brand new plastic, contradicts Milton with a dent"
+R900021,R950027,0,N03,"iPhone case, contradicts Samsung"
+R900022,R950028,0,N04,"Small floral folding umbrella, contradicts large golf umbrella"
+R900023,R950029,0,N05,"Metal with no stickers, contradicts planet stickers"

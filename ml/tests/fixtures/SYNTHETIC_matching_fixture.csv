@@ -1,0 +1,11 @@
+report_id,report_type,category,color,brand,description,synthetic_expected_match
+SL1,LOST,Wallet,black,,Black leather wallet with a student card and a metro pass,SF1
+SL2,LOST,Water Bottle,blue,Milton,Blue steel bottle with a dent and a sticker of a cat,SF2
+SL3,LOST,Earphones,white,Boat,White earbuds in a case with scratches on the lid,SF3
+SL4,LOST,Umbrella,green,,Green folding umbrella with a wooden handle,SF4
+SF1,FOUND,Wallet,black,,Found a black leather wallet holding a student card,
+SF2,FOUND,Water Bottle,blue,,Blue bottle with a cat sticker and a small dent,
+SF3,FOUND,Earphones,white,,Earbud case with scratched lid,
+SF4,FOUND,Umbrella,green,,Folding umbrella with wooden handle left at the gate,
+SF5,FOUND,Wallet,brown,,Brown wallet with no cards,
+SF6,FOUND,Notebook,red,,Red notebook full of maths notes,

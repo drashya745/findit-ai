@@ -1,0 +1,23 @@
+check_id,check,kind,severity,lost_id,found_id,current_label,detail
+A09,positive_with_structured_field_conflict,automatic,info,R900003,R950004,1,location: Gym vs Sports Complex
+A09,positive_with_structured_field_conflict,automatic,info,R900004,R950006,1,color: silver vs grey
+A09,positive_with_structured_field_conflict,automatic,info,R900005,R950007,1,category: Bag vs Laptop Bag
+A09,positive_with_structured_field_conflict,automatic,info,R900006,R950008,1,location: Library vs Main Gate
+A09,positive_with_structured_field_conflict,automatic,info,R900009,R950013,1,location: Sports Ground vs Cricket Ground
+A09,positive_with_structured_field_conflict,automatic,info,R900015,R950021,1,location: Seminar Hall vs Auditorium
+A09,positive_with_structured_field_conflict,automatic,info,R900016,R950022,1,category: Tumbler vs Flask
+A10,implicit_negative_same_category_and_colour,automatic,warning,R900001,R950003,unlabelled (closed-world 0),same category (Wallet) and colour (black); no explicit label or rationale
+A10,implicit_negative_same_category_and_colour,automatic,warning,R900002,R950001,unlabelled (closed-world 0),same category (Wallet) and colour (black); no explicit label or rationale
+A11,implicit_negative_scores_like_a_positive,automatic,warning,R900003,R950012,unlabelled (closed-world 0),keyword-baseline-v1/blocking off: score 0.409 >= lowest positive score 0.400
+A11,implicit_negative_scores_like_a_positive,automatic,warning,R900004,R950030,unlabelled (closed-world 0),keyword-baseline-v1/blocking off: score 0.409 >= lowest positive score 0.400
+A11,implicit_negative_scores_like_a_positive,automatic,warning,R900011,R950027,unlabelled (closed-world 0),keyword-baseline-v1/blocking off: score 0.440 >= lowest positive score 0.400
+A11,implicit_negative_scores_like_a_positive,automatic,warning,R900019,R950005,unlabelled (closed-world 0),keyword-baseline-v1/blocking off: score 0.500 >= lowest positive score 0.400
+A11,implicit_negative_scores_like_a_positive,automatic,warning,R900021,R950001,unlabelled (closed-world 0),keyword-baseline-v1/blocking off: score 0.485 >= lowest positive score 0.400
+A11,implicit_negative_scores_like_a_positive,automatic,warning,R900021,R950020,unlabelled (closed-world 0),keyword-baseline-v1/blocking off: score 0.400 >= lowest positive score 0.400
+A11,implicit_negative_scores_like_a_positive,automatic,warning,R900019,R950005,unlabelled (closed-world 0),keyword-baseline-v1/blocking on: score 0.500 >= lowest positive score 0.400
+A11,implicit_negative_scores_like_a_positive,automatic,warning,R900004,R950030,unlabelled (closed-world 0),python-tfidf-v1/blocking off: score 0.418 >= lowest positive score 0.400
+A11,implicit_negative_scores_like_a_positive,automatic,warning,R900019,R950005,unlabelled (closed-world 0),python-tfidf-v1/blocking off: score 0.484 >= lowest positive score 0.400
+A11,implicit_negative_scores_like_a_positive,automatic,warning,R900021,R950001,unlabelled (closed-world 0),python-tfidf-v1/blocking off: score 0.410 >= lowest positive score 0.400
+A11,implicit_negative_scores_like_a_positive,automatic,warning,R900019,R950005,unlabelled (closed-world 0),python-tfidf-v1/blocking on: score 0.484 >= lowest positive score 0.400
+A12,low_information_lost_description,automatic,info,R900007,,,only 1 informative word(s): ['earphones']
+A12,low_information_lost_description,automatic,info,R900008,,,only 1 informative word(s): ['gym']

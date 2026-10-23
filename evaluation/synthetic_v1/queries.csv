@@ -1,0 +1,24 @@
+lost_id,group_id,split,has_true_match,difficulty,notes
+R900001,G01,dev,1,easy,Paraphrase; hard negative is a brown wallet at the same place
+R900002,G02,test,1,synonym,purse vs wallet
+R900003,G03,dev,1,typo,"botle/stiker typos; true match in same zone, hard negative at exact location"
+R900004,G04,test,1,near_colour,silver vs grey; same label RK
+R900005,G05,dev,1,cross_category,Reported as Bag; found as Laptop Bag
+R900006,G06,test,1,location_mismatch,Found at Main Gate (different zone); hard negative at exact location
+R900007,G07,dev,1,vague_lost,Lost text is two words; distractor in the neighbouring hostel
+R900008,G08,test,1,no_text,Lost description has no informative words
+R900009,G09,dev,1,location_zone,Sports Ground vs Cricket Ground (same zone)
+R900010,G10,test,1,detail,10000mAh vs 10000 mAh tokenization
+R900011,G11,dev,1,synonym,spectacles vs glasses
+R900012,G12,test,1,detail,Same keys in different words; hard negative at exact location
+R900013,G13,dev,1,easy,Hard negative: same colour/category/place but chemistry notes
+R900014,G14,test,1,synonym,pen drive vs USB flash drive; SanDisk not mentioned in found
+R900015,G15,test,1,location_zone,Seminar Hall vs Auditorium (same zone)
+R900016,G16,test,1,cross_category,Reported as Tumbler; found as Flask (related group)
+R900017,G17,test,1,easy,textbook vs book; brand only in found text
+R900018,G18,test,1,detail,Hard negative: black watch at same place but Casio and undamaged
+R900019,N01,dev,0,no_match,Only a different green bottle exists
+R900020,N02,test,0,no_match,No hoodie was found at all (empty candidate set under category blocking)
+R900021,N03,dev,0,no_match,Only an iPhone case exists
+R900022,N04,test,0,no_match,Only a small floral umbrella exists
+R900023,N05,test,0,no_match,Only a sticker-free metal pencil box exists

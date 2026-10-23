@@ -1,0 +1,138 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "findit_matcher_v1.schema.json",
+  "title": "FindIt AI C++ <-> Python matcher protocol, schema_version 1.0",
+  "description": "JSON Lines over the Python process's stdin/stdout: one JSON object per line. C++ sends fit/rank/shutdown requests; Python sends one ready message at start-up and one response per request. Validated in C++ by PythonTextClient and in Python by findit_ml.service.",
+  "oneOf": [
+    {"$ref": "#/$defs/ready"},
+    {"$ref": "#/$defs/fitRequest"},
+    {"$ref": "#/$defs/fitResult"},
+    {"$ref": "#/$defs/rankRequest"},
+    {"$ref": "#/$defs/rankResult"},
+    {"$ref": "#/$defs/shutdownRequest"},
+    {"$ref": "#/$defs/error"}
+  ],
+  "$defs": {
+    "schemaVersion": {"const": "1.0"},
+    "requestId": {"type": "string", "minLength": 1, "description": "Chosen by C++; echoed in the response."},
+    "textFields": {
+      "type": "object",
+      "description": "Text used for TF-IDF. Missing or empty strings mean 'unknown'.",
+      "properties": {
+        "description": {"type": "string"},
+        "category": {"type": "string"},
+        "color": {"type": "string"},
+        "brand": {"type": "string"}
+      }
+    },
+    "reportText": {
+      "description": "A report sent for ranking: text fields plus its ID. The ID is only an identifier, never a feature.",
+      "allOf": [{"$ref": "#/$defs/textFields"}],
+      "type": "object",
+      "required": ["report_id"],
+      "properties": {"report_id": {"type": "string", "minLength": 1}}
+    },
+    "ready": {
+      "type": "object",
+      "required": ["schema_version", "type", "status"],
+      "properties": {
+        "schema_version": {"$ref": "#/$defs/schemaVersion"},
+        "type": {"const": "ready"},
+        "status": {"enum": ["ok", "error"]},
+        "service": {"type": "string"},
+        "versions": {"type": "object", "additionalProperties": {"type": "string"}},
+        "error": {"$ref": "#/$defs/errorBody", "description": "Present when status is error; code missing_dependency means a Python package is not installed."}
+      }
+    },
+    "fitRequest": {
+      "type": "object",
+      "required": ["schema_version", "type", "request_id", "documents"],
+      "properties": {
+        "schema_version": {"$ref": "#/$defs/schemaVersion"},
+        "type": {"const": "fit"},
+        "request_id": {"$ref": "#/$defs/requestId"},
+        "documents": {
+          "type": "array",
+          "description": "Unlabelled corpus (all lost and found reports). No IDs, statuses or labels.",
+          "items": {"$ref": "#/$defs/textFields"}
+        }
+      }
+    },
+    "fitResult": {
+      "type": "object",
+      "required": ["schema_version", "type", "request_id", "status", "documents_fitted", "vocabulary_size"],
+      "properties": {
+        "schema_version": {"$ref": "#/$defs/schemaVersion"},
+        "type": {"const": "fit_result"},
+        "request_id": {"$ref": "#/$defs/requestId"},
+        "status": {"const": "ok"},
+        "documents_fitted": {"type": "integer", "minimum": 1, "description": "Documents with usable text."},
+        "vocabulary_size": {"type": "integer", "minimum": 0}
+      }
+    },
+    "rankRequest": {
+      "type": "object",
+      "required": ["schema_version", "type", "request_id", "top_k", "lost", "candidates"],
+      "properties": {
+        "schema_version": {"$ref": "#/$defs/schemaVersion"},
+        "type": {"const": "rank"},
+        "request_id": {"$ref": "#/$defs/requestId"},
+        "top_k": {"type": "integer", "minimum": 1, "description": "C++ sends the number of candidates, so every candidate is scored."},
+        "lost": {"$ref": "#/$defs/reportText"},
+        "candidates": {"type": "array", "items": {"$ref": "#/$defs/reportText"}, "description": "Candidate IDs must be unique."}
+      }
+    },
+    "match": {
+      "type": "object",
+      "required": ["candidate_id", "rank", "similarity", "word_similarity", "char_similarity", "shared_terms", "explanation"],
+      "properties": {
+        "candidate_id": {"type": "string", "minLength": 1, "description": "Must be one of the request's candidate report_ids, at most once."},
+        "rank": {"type": "integer", "minimum": 1, "description": "1-based position in matches."},
+        "similarity": {"type": "number", "minimum": 0, "maximum": 1, "description": "0.6*word + 0.4*char cosine; a ranking value, not a probability. Non-increasing across matches."},
+        "word_similarity": {"type": "number", "minimum": 0, "maximum": 1},
+        "char_similarity": {"type": "number", "minimum": 0, "maximum": 1},
+        "shared_terms": {"type": "array", "items": {"type": "string"}, "description": "Exact informative words in both texts, rarest first."},
+        "explanation": {"type": "string"}
+      }
+    },
+    "rankResult": {
+      "type": "object",
+      "required": ["schema_version", "type", "request_id", "status", "lost_has_text", "matches"],
+      "properties": {
+        "schema_version": {"$ref": "#/$defs/schemaVersion"},
+        "type": {"const": "rank_result"},
+        "request_id": {"$ref": "#/$defs/requestId"},
+        "status": {"const": "ok"},
+        "lost_has_text": {"type": "boolean", "description": "false: the lost description has no informative words; matches is then empty."},
+        "matches": {"type": "array", "items": {"$ref": "#/$defs/match"}, "description": "When lost_has_text is true, contains every candidate exactly once (top_k = candidate count)."}
+      }
+    },
+    "shutdownRequest": {
+      "type": "object",
+      "required": ["schema_version", "type"],
+      "properties": {
+        "schema_version": {"$ref": "#/$defs/schemaVersion"},
+        "type": {"const": "shutdown"}
+      }
+    },
+    "errorBody": {
+      "type": "object",
+      "required": ["code", "message"],
+      "properties": {
+        "code": {"enum": ["missing_dependency", "invalid_json", "invalid_request", "not_fitted", "internal_error"]},
+        "message": {"type": "string"}
+      }
+    },
+    "error": {
+      "type": "object",
+      "required": ["schema_version", "type", "status", "error"],
+      "properties": {
+        "schema_version": {"$ref": "#/$defs/schemaVersion"},
+        "type": {"const": "error"},
+        "request_id": {"type": ["string", "null"], "description": "null when the request could not be parsed."},
+        "status": {"const": "error"},
+        "error": {"$ref": "#/$defs/errorBody"}
+      }
+    }
+  }
+}
