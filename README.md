@@ -1,10 +1,5 @@
 # FindIt AI — Intelligent Campus Lost-and-Found Matcher
 
-[![C++17](https://img.shields.io/badge/C%2B%2B-17-blue.svg)](https://en.cppreference.com/w/cpp/17)
-[![Python 3.14](https://img.shields.io/badge/Python-3.14-green.svg)](https://www.python.org/)
-[![React 18](https://img.shields.io/badge/Frontend-React%2018%20%2B%20TypeScript-blueviolet.svg)](https://react.dev/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](third_party/README.md)
-
 FindIt AI is an intelligent campus lost-and-found system featuring an object-oriented **C++17** core, a **Python scikit-learn** TF-IDF text similarity service communicating over a structured JSON pipe, a local JSON HTTP API server, an interactive terminal CLI, and a modern single-page **React + TypeScript + Tailwind CSS** web application.
 
 ---
